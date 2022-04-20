@@ -12,6 +12,10 @@ feature2:any{
 console.log("alice added this feature1 as part of 2nd commit")
 }
 
+feature3:any{
+console.log("feature 3 added in the master")
+}
+
 
 
 }
