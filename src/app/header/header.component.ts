@@ -6,4 +6,6 @@ import {Component} from "@angular/core";
 })
 export class HeaderComponent {
 
+console.log("alice added this header as part of 1st commit")
+
 }
