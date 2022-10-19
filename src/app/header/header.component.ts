@@ -1,21 +1,14 @@
-import {Component} from "@angular/core";
+import {Component, EventEmitter, Output} from "@angular/core";
 
 @Component({
   selector: 'app-header',
-  templateUrl: 'header.component.html'
+  templateUrl: './header.component.html'
 })
 export class HeaderComponent {
 
-console.log("alice added this header as part of 1st commit")
+ @Output() featureSelected= new EventEmitter<string>();
 
-feature2:any{
-console.log("alice added this feature1 as part of 2nd commit")
-}
-
-feature3:any{
-console.log("feature 3 added in the master")
-}
-
-
-
+  onSelect(feature: string) {
+    this.featureSelected.emit(feature);
+  }
 }
